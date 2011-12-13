@@ -25,6 +25,5 @@ knife node run_list add app2.streetchef.local "recipe[backup::client]"
 # Add mblwhoi server roles to app2.
 for r in dla intranet library_legacy library; do knife node run_list add app2.streetchef.local "role[mblwhoi_${r}_webserver]"; done
 
-# Run chef on the nodes.
-vagrant provision app1
-vagrant provision app2
+# Run chef on the nodes, three times to get the backup job registration correct.
+for i in {1..3}; do vagrant provision app{1,2}; done
