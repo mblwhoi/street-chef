@@ -5,3 +5,4 @@ private/*
 !private/readme.md
 tmp
 .chef/data_bag_secret
+Cheffile.lock

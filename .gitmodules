@@ -1,0 +1,3 @@
+[submodule "mblwhoi_chef"]
+	path = mblwhoi_chef
+	url = git@github.com:mblwhoi/mblwhoi_chef.git

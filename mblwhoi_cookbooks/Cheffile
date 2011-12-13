@@ -1,0 +1,44 @@
+# Contrib cookbooks
+site 'http://community.opscode.com/api/v1'
+     cookbook 'apt'
+     cookbook 'git'
+     cookbook 'postfix'
+
+# Customized contrib cookbooks.
+cookbook 'drush', :git => 'git@github.com:mbl-cli/cli-legacy-cookbooks.git'
+cookbook 'php', :git => 'git@github.com:mbl-cli/cli-legacy-cookbooks.git'
+
+# Backup cookbook & supporting infrastructure.
+cookbook 'backup',
+  :git => 'git@github.com:mblwhoi/backups_cookbook.git'
+
+cookbook 'whenever',
+  :git => 'git@github.com:mblwhoi/whenever_cookbook.git'
+
+cookbook 'ohai',
+  :git => 'git@github.com:mblwhoi/ohai.git'
+
+cookbook 'ssh_key',
+  :git => 'git@github.com:mblwhoi/ssh_keys_cookbook.git'
+
+# MBLWHOI Website Environment Cookbooks.
+cookbook 'mblwhoi_disable_default_apache',
+  :git => 'git@github.com:mblwhoi/mblwhoi_cookbooks.git'
+
+cookbook 'mblwhoi_dla_web_env',
+  :git => 'git@github.com:mblwhoi/mblwhoi_cookbooks.git'
+
+cookbook 'mblwhoi_drupal_app',
+  :git => 'git@github.com:mblwhoi/mblwhoi_cookbooks.git'
+
+cookbook 'mblwhoi_intranet_web_env',
+  :git => 'git@github.com:mblwhoi/mblwhoi_cookbooks.git'
+
+cookbook 'mblwhoi_library_web_env',
+  :git => 'git@github.com:mblwhoi/mblwhoi_cookbooks.git'
+
+cookbook 'mblwhoi_vhost_env',
+  :git => 'git@github.com:mblwhoi/mblwhoi_cookbooks.git'
+
+cookbook 'mblwhoi_library_legacy_web_env',
+  :git => 'git@github.com:mblwhoi/mblwhoi_cookbooks.git'

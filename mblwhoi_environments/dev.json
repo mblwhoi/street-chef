@@ -1,0 +1,30 @@
+{
+  "name": "dev",
+  "description": "streetchef development environment",
+  "json_class": "Chef::Environment",
+  "chef_type": "environment",
+  "override_attributes": {
+    "mblwhoi_dla_webserver": {
+      "app_owner": "vagrant"
+    },
+    "mblwhoi_intranet_webserver": {
+      "app_owner": "vagrant"
+    },
+    "mblwhoi_library_legacy_webserver": {
+      "app_owner": "vagrant"
+    },
+    "mblwhoi_library_webserver": {
+      "app_owner": "vagrant"
+    },
+    "backup":{
+      "client": {
+        "default_destinations": [
+        {
+          "type": "ip",
+          "ip": "192.168.234.11"
+        }
+        ]
+      }
+    }
+  }
+}
