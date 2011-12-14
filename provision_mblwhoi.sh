@@ -19,9 +19,6 @@ for n in app1 app2; do knife node run_list add "${n}.streetchef.local" "recipe[v
 # Add backup manager recipe to app1.
 knife node run_list add app1.streetchef.local "recipe[backup::manager]"
 
-# Add backup client role to app2.
-knife node run_list add app2.streetchef.local "recipe[backup::client]"
-
 # Add mblwhoi server roles to app2.
 for r in dla intranet library_legacy library; do knife node run_list add app2.streetchef.local "role[mblwhoi_${r}_webserver]"; done
 
