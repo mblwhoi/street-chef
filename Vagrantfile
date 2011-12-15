@@ -22,6 +22,8 @@ Vagrant::Config.run do |config|
       }
       }
     end
+    chef_config.vm.forward_port("ssh", 22, 2210)
+    chef_config.vm.forward_port("web", 80, 8010)
   end
 #
 #example clients
@@ -35,6 +37,8 @@ Vagrant::Config.run do |config|
       chef.validation_client_name = "chef-validator"
       chef.validation_key_path = "private/validation.pem"
     end
+    app1config.vm.forward_port("ssh", 22, 2211)
+    app1config.vm.forward_port("web", 80, 8011)
   end
 
   config.vm.define :app2 do |app2config|
@@ -47,6 +51,8 @@ Vagrant::Config.run do |config|
       chef.validation_client_name = "chef-validator"
       chef.validation_key_path = "private/validation.pem"
     end
+    app2config.vm.forward_port("ssh", 22, 2212)
+    app2config.vm.forward_port("web", 80, 8012)
   end
 
 end
