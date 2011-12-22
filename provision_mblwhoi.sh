@@ -9,6 +9,16 @@ knife exec -E 'nodes.transform("chef_environment:_default") { |n| n.chef_environ
 # Upload roles.
 for f in `ls -1 chef-repo/roles/mblwhoi*.rb`; do knife role from file $f; done;
 
+# Upload databags.
+for d in `ls -1 chef-repo/data_bags`; do 
+    if [ -d chef-repo/data_bags/$d ]; then 
+        knife data bag create $d; 
+        for f in `ls chef-repo/data_bags/$d/*.json`; do 
+            knife data bag from file $d $f; 
+        done 
+    fi 
+done
+
 # Download and upload cookbooks.
 cd mblwhoi_cookbooks; librarian-chef install; cd -; knife cookbook upload -a -o mblwhoi_cookbooks/cookbooks;
 
