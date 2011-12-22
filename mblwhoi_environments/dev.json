@@ -5,17 +5,13 @@
   "chef_type": "environment",
   "override_attributes": {
     "mblwhoi_dla_webserver": {
-      "app_owner": "vagrant",
       "server_aliases": "*dla.whoi.edu"
     },
     "mblwhoi_intranet_webserver": {
-      "app_owner": "vagrant"
     },
     "mblwhoi_library_legacy_webserver": {
-      "app_owner": "vagrant"
     },
     "mblwhoi_library_webserver": {
-      "app_owner": "vagrant"
     },
     "backup":{
       "client": {
