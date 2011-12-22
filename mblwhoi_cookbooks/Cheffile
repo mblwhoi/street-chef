@@ -21,6 +21,11 @@ cookbook 'ohai',
 cookbook 'ssh_key',
   :git => 'git@github.com:mblwhoi/ssh_keys_cookbook.git'
 
+# users cookbook.
+cookbook 'users',
+  :git => 'git@github.com:mblwhoi/opscode-cookbooks.git',
+  :ref => '511eb389538b01f9c24f0b3f80692be40dfc11ee'
+
 # MBLWHOI Website Environment Cookbooks.
 cookbook 'mblwhoi_disable_default_apache',
   :git => 'git@github.com:mblwhoi/mblwhoi_cookbooks.git'
