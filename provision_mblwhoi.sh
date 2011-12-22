@@ -7,7 +7,7 @@ knife environment from file mblwhoi_environments/dev.json
 knife exec -E 'nodes.transform("chef_environment:_default") { |n| n.chef_environment("dev") }'
 
 # Upload roles.
-for f in `ls -1 mblwhoi_chef/mblwhoi_roles/*.rb`; do knife role from file $f; done;
+for f in `ls -1 chef-repo/roles/mblwhoi*.rb`; do knife role from file $f; done;
 
 # Download and upload cookbooks.
 cd mblwhoi_cookbooks; librarian-chef install; cd -; knife cookbook upload -a -o mblwhoi_cookbooks/cookbooks;
