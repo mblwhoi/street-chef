@@ -25,6 +25,10 @@ Instructions
 5. Watch as your chef server is built and you get a few apps servers thrown in as tasty extras on the side.
 
 
+Restarting: if you have an existing street-chef environment, you can reload it by simply calling 'vagrant up' from within the street-chef directory.
+
+Note that sometimes the chef server node will sometimes fail on restart due to a race condition with the rabbit-mq server.  If you get stack traces with errors like "rabbitmqctl add_vhost /chef failed", this is likely the cause.  If this happens just do 'vagrant provision chef' to re-provision the chef node.
+
 Usage
 -----
 
