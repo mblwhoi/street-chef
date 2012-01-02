@@ -8,10 +8,13 @@
       "server_aliases": "*dla.whoi.edu"
     },
     "mblwhoi_intranet_webserver": {
+      "server_aliases": "*intranet.mblwhoilibrary.org"
     },
     "mblwhoi_library_legacy_webserver": {
+      "server_aliases": "*legacy.mblwhoilibrary.org"
     },
     "mblwhoi_library_webserver": {
+      "server_aliases": "*mblwhoilibrary.org"
     },
     "backup":{
       "client": {
