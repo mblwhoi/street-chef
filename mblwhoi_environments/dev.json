@@ -5,16 +5,16 @@
   "chef_type": "environment",
   "override_attributes": {
     "mblwhoi_dla_webserver": {
-      "server_aliases": "*dla.whoi.edu"
+      "server_aliases": "dev.dla.whoi.edu"
     },
     "mblwhoi_intranet_webserver": {
-      "server_aliases": "*intranet.mblwhoilibrary.org"
+      "server_aliases": "dev.intranet.mblwhoilibrary.org"
     },
     "mblwhoi_library_legacy_webserver": {
-      "server_aliases": "*legacy.mblwhoilibrary.org"
+      "server_aliases": "dev.legacy.mblwhoilibrary.org"
     },
     "mblwhoi_library_webserver": {
-      "server_aliases": "*mblwhoilibrary.org"
+      "server_aliases": "dev.mblwhoilibrary.org"
     },
     "backup":{
       "client": {

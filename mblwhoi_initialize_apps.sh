@@ -8,7 +8,7 @@
 script_dir="$( cd "$( dirname "$0" )" && pwd )"
 
 # Change into the capistrano recipes folder.
-cd mblwhoi_capistrano_recipes;
+cd $script_dir/mblwhoi_capistrano_recipes;
 
 # For each app config line...
 for l in `cat $script_dir/mblwhoi_app_configs.csv`; do
