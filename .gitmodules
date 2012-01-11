@@ -1,3 +1,6 @@
 [submodule "chef-repo"]
 	path = chef-repo
 	url = git@github.com:mblwhoi/chef-repo.git
+[submodule "mblwhoi_capistrano_recipes"]
+	path = mblwhoi_capistrano_recipes
+	url = git@github.com:mblwhoi/mblwhoi_capistrano_recipes.git
